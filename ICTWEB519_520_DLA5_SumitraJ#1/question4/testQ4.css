@@ -1,0 +1,18 @@
+h1 {
+  /* color: indigo; */
+  /* color: #4b0082; */
+  color: rgb(75, 0, 130);
+}
+
+h2 {
+  /* color: maroon; */
+  /* color: #800000; */
+  color: rgb(128, 0, 0);
+}
+
+h3 {
+  /* color: orangered; */
+  /* color: #ff4500; */
+  /* opacity: 0.5; */
+  color: rgba(255, 69, 0, 0.5);
+}

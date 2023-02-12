@@ -1,0 +1,17 @@
+.class1 {
+  font-family: "Times New Roman";
+  color: darkslateblue;
+  font-size: 75%;
+}
+
+.class2 {
+  font-family: Tahoma;
+  color: goldenrod;
+  font-size: 90%;
+}
+
+.class3 {
+  font-family: Garamond;
+  color: seagreen;
+  font-size: xx-large;
+}

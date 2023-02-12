@@ -1,0 +1,11 @@
+.class1 {
+  text-decoration: dashed overline purple;
+}
+
+.class2 {
+  text-decoration: line-through dotted red;
+}
+
+.class3 {
+  text-decoration: underline double green;
+}
