@@ -1,0 +1,134 @@
+<!--********************************************************
+ * Author: Leonard Siu                                     *
+ * Date created: 24 August 2021                            *
+ ********************************************************-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/c0c1ac414c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/template.js"></script>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/template.css" />
+    <link rel="stylesheet" href="css/hamburgerMenu.css" />
+    <link rel="stylesheet" href="css/content.css" />
+    <title>Sample Website | Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="mobileMenuContainer">
+          <input type="checkbox" class="toggler" />
+          <div class="mobileButtonStyle hamburger perfectCenter">
+            <div></div>
+          </div>
+          <div class="modal mobileMenu">
+            <ul>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </div>
+          <!-- <div class="menu"> -->
+        </div>
+        <!-- <div class="mobileMenuContainer"> -->
+        <a href="index.html">
+          <img id="logo" src="images/logo.png" alt="Image Not Loaded" />
+        </a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section>
+          <h1 class="pageTitle centerText">Registration Form</h1>
+          <p class="centerText">
+            Please complete the following form to register for an account on our
+            website.
+          </p>
+
+          <form
+            class="registrationForm"
+            name="registrationForm"
+            action="processes/processRegisterCustomer.html"
+            method="post"
+            onsubmit="return validateRegistrationForm()"
+          >
+            <div class="inputGroup">
+              <label for="username">Username<sup>*</sup>:</label>
+              <input type="text" id="username" name="username" required />
+            </div>
+            <div class="inputGroup">
+              <label for="emailAddress">Email Address<sup>*</sup>:</label>
+              <input
+                type="email"
+                id="emailAddress"
+                name="emailAddress"
+                required
+              />
+            </div>
+            <div class="inputGroup">
+              <label for="password">Password<sup>*</sup>:</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <div class="inputGroup">
+              <label for="confirmPassword">Confirm Password<sup>*</sup>:</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                required
+              />
+            </div>
+            <div class="inputGroup">
+              <p>Gender<sup>*</sup>:</p>
+              <div class="radioGender">
+                <input
+                  type="radio"
+                  id="male"
+                  name="gender"
+                  value="male"
+                  required
+                /><label for="male">Male</label>
+                <input
+                  type="radio"
+                  id="female"
+                  name="gender"
+                  value="female"
+                  required
+                /><label for="female">female</label>
+              </div>
+            </div>
+            <div class="inputGroup">
+              <label for="dateOfBirth">Date of Birth</label>
+              <input type="date" id="dateOfBirth" name="dateOfBirth" />
+            </div>
+
+            <!-- BUTTONS -->
+            <input
+              type="button"
+              value="Clear"
+              onclick="clearRegistrationForm()"
+            />
+            <input type="submit" name="register" value="Register" />
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>
+          &copy;<span id="currentYear"></span> Leonard Siu All rights reserved
+        </p>
+        <a href="privacyPolicy.html" target="_blank">Privacy Policy</a>
+      </footer>
+    </div>
+    <!-- <div class="container"> -->
+    <script type="text/javascript">
+      document.querySelector("#currentYear").innerHTML = getCurrentYear();
+    </script>
+  </body>
+</html>

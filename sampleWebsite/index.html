@@ -1,0 +1,77 @@
+<!--********************************************************
+ * Author: Leonard Siu                                     *
+ * Date created: 24 August 2021                            *
+ ********************************************************-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/c0c1ac414c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="js/template.js"></script>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/template.css" />
+    <link rel="stylesheet" href="css/hamburgerMenu.css" />
+    <link rel="stylesheet" href="css/content.css" />
+    <title>Sample Website | Home</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="mobileMenuContainer">
+          <input type="checkbox" class="toggler" />
+          <div class="mobileButtonStyle hamburger perfectCenter">
+            <div></div>
+          </div>
+          <div class="modal mobileMenu">
+            <ul>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </div>
+          <!-- <div class="menu"> -->
+        </div>
+        <!-- <div class="mobileMenuContainer"> -->
+        <a href="index.html">
+          <img id="logo" src="images/logo.png" alt="Image Not Loaded" />
+        </a>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section>
+          <h1 class="pageTitle centerText">Sample Website</h1>
+          <p class="centerText">
+            Please see the code in this website for reference
+          </p>
+          <div class="categoryCard">
+            <div class="categoryImage">
+              <a href="#"
+                ><img src="images/productCategories/computer.jpg" alt=""
+              /></a>
+            </div>
+            <div class="categoryTitle perfectCenter"><h2>Sample Card</h2></div>
+          </div>
+          <!-- <div class="categoryCard"> -->
+        </section>
+      </main>
+      <footer>
+        <p>
+          &copy;<span id="currentYear"></span> &lt;YOUR NAME&gt; All rights
+          reserved
+        </p>
+        <a href="#" target="_blank">Privacy Policy</a>
+      </footer>
+    </div>
+    <!-- <div class="container"> -->
+    <script type="text/javascript">
+      document.querySelector("#currentYear").innerHTML = getCurrentYear();
+    </script>
+  </body>
+</html>
