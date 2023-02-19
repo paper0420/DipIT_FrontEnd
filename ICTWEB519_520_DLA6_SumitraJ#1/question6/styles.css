@@ -1,0 +1,17 @@
+/* Normal: */
+.col {
+  width: 100%;
+  background-color: lightblue;
+}
+
+div {
+  float: left;
+}
+
+/* For Portrait */
+@media screen and (min-width: 800px) {
+  .col {
+    width: 50%;
+    background-color: lightgray;
+  }
+}

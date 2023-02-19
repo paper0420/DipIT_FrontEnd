@@ -1,0 +1,22 @@
+#top {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  opacity: 0.5;
+  border: 1px solid #ff0000;
+  margin: auto;
+  position: relative;
+  z-index: 3;
+  top: 100px;
+}
+
+#bottom {
+  width: 290px;
+  height: 290px;
+  border: 1px solid blue;
+  background-image: url("turtlepic.jpg");
+  background-size: contain;
+  position: relative;
+  z-index: 2;
+  margin: auto;
+}

@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.outer {
+  border: 1px solid red;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  padding: 10px;
+}
+
+.inner {
+  height: 100%;
+}
+
+header {
+  border: 1px solid green;
+  height: 20%;
+}
+
+.container {
+  display: flex;
+  height: 80%;
+  padding-top: 10px;
+}
+
+main {
+  border: 1px solid green;
+  width: 80%;
+  height: 100%;
+}
+
+aside {
+  width: 20%;
+  height: 100%;
+  padding-left: 10px;
+}
+
+aside > div {
+  border: 1px solid green;
+  height: 100%;
+}

@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+header {
+  background-color: lightgray;
+  color: #fdfdfd;
+  height: 10%;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.nav {
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.toppart {
+  position: sticky;
+  top: 0;
+}
+
+.nav > p {
+  padding: 10px 30px 5px 30px;
+}
+
+.main {
+  background-color: lightgreen;
+}
+
+.main > h2 {
+  margin: 0;
+}

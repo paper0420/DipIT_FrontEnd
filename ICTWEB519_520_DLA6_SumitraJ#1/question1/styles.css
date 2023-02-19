@@ -1,0 +1,12 @@
+h2 {
+  text-align: center;
+}
+
+.preparation,
+h2 {
+  color: #4d90fe;
+}
+
+.caution {
+  color: red;
+}
