@@ -1,0 +1,72 @@
+menu {
+  background-color: lightgray;
+  position: static;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+
+.hamb {
+  cursor: pointer;
+  float: left;
+  padding: 20px 0px 0px 10px;
+} /* Style label tag */
+
+.hamb-line {
+  background-color: black;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after {
+  background-color: black;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.hamb-line::before {
+  top: 5px;
+}
+.hamb-line::after {
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.side-menu:checked ~ menu {
+  max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 600px) {
+  menu {
+    max-height: none;
+    top: 0;
+    position: relative;
+    /* float: right;
+    width: fit-content; */
+  }
+
+  .hamb {
+    display: none;
+  }
+}
