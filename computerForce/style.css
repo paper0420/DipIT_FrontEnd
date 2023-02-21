@@ -16,6 +16,12 @@ body {
 main {
   text-align: center;
   background-color: lightgrey;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+main > h1 {
+  padding: 10px;
 }
 
 header {
@@ -24,10 +30,18 @@ header {
   top: 0;
   text-align: center;
   z-index: 5;
+  padding: 10px 10px;
+  border: 5px solid white;
+  border-radius: 10px;
 }
 
 aside {
   background-color: lightgray;
+  border: 5px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 menu {
@@ -43,8 +57,24 @@ menu ul li a {
   text-decoration: none;
 }
 
+li {
+  margin-top: 10px;
+}
+
+form {
+  margin-top: 10px;
+}
+
 menu ul li a:hover {
   background-color: #111;
+}
+
+.productContainer {
+  margin: 10px 10px;
+}
+
+.productCard {
+  padding: 10px 10px;
 }
 
 footer {
@@ -52,6 +82,23 @@ footer {
   background-color: lightgray;
   text-align: center;
   height: 10%;
+}
+aside > h2 {
+  padding: 20px 10px;
+}
+
+aside > button {
+  margin: 20px 20px;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+td,
+th {
+  text-align: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -159,5 +206,13 @@ footer {
     position: sticky;
     top: 70px;
     height: 100%;
+  }
+
+  li {
+    margin: 5px 10px 0px 0px;
+  }
+
+  form {
+    margin: 5px 5px 0px 0px;
   }
 } /* media quarie end */
