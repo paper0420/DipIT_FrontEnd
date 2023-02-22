@@ -1,0 +1,16 @@
+.input-group {
+  margin-top: 10px;
+}
+.input-group > label {
+  display: inline-block;
+}
+
+.formButton {
+  display: flex;
+  justify-content: center;
+}
+
+.formButton > button {
+  margin: 10px;
+  padding: 10px;
+}
