@@ -80,7 +80,10 @@ li {
 
 .productCard {
   padding: 10px 10px;
+  margin: 10px;
   text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
 footer {
@@ -119,6 +122,9 @@ button {
 
 .goallist > li > ul > li {
   margin-left: 2em;
+}
+
+.productCard h2 {
 }
 @media screen and (min-width: 600px) {
   * {
