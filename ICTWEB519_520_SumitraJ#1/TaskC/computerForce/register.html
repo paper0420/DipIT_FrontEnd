@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="template.css" />
+    <link rel="stylesheet" href="hamburgerMenu.css">
+    <link rel="stylesheet" href="bagButton.css">
+    <link rel="stylesheet" href="registerStyle.css">
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <input class="side-menu" type="checkbox" id="side-menu" />
+        <label class="hamb" for="side-menu">
+          <span class="hamb-line"></span>
+        </label>
+        <h1> <a href="index.html">ComputerForce</a></h1>
+        <menu class="col-12">
+          <ul class="listmenu">
+            <li><a href="products.html">Products</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+          <form class="searchForm">
+            <input type="text" />
+            <button>Search</button>
+          </form>
+        </menu>
+      </header>
+      <div class="mainContainer col-12">
+        <input class="bagButton" type="checkbox" id="bagButton" />
+        <label class="bag" for="bagButton">
+            &#9751
+        </label>
+        <main class="col-9">
+          <h1>Register Form</h1>
+          <p>Please complete the following form to register for an account on our website.</p>
+          <form class="">
+            <div class="col-12 input-group">
+              <label for="username" class="col-3">Username*</label>
+              <input type="text" id="username" required class="col-8" />
+            </div>
+
+            <div class="col-12 input-group">
+              <label for="email" class="col-3">Email*</label>
+              <input type="text" id="email" required class="col-8" />
+            </div>
+
+            <div class="col-12 input-group">
+              <label for="password" class="col-3">Password*</label>
+              <input type="text" id="password" required class="col-8" />
+            </div>
+
+            <div class="col-12 input-group">
+              <label for="confirmPassword" class="col-3">Confirm Password*</label>
+              <input type="text" id="confirmPassword" required class="col-8" />
+            </div>
+
+            <div class="col-12 input-group">
+              <label for="firstName" class="col-3">Firstname*</label>
+              <input type="text" id="firstName" required class="col-8" />
+            </div>
+      
+            <div class="col-12 input-group">
+              <label for="surname" class="col-3">Surname*</label>
+              <input type="text" id="surname" required class="col-8" />
+            </div>
+
+            <div class="col-12 input-group">
+              <label for="gender" class="col-3">Gender*</label>
+              <select name="" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="col-12 input-group">
+              <label for="dateOfBirth" class="col-3">DateOfBirth*</label>
+              <input type="text" id="dateOfBirth" required class="col-8" />
+            </div>
+
+            <div class="col-12 input-group">
+              <label for="address" class="col-3">Address*</label>
+              <input type="text" id="address" required class="col-8" />
+            </div>
+      
+            <div class="col-12 input-group">
+              <label for="suburb" class="col-3">Suburb*</label>
+              <input type="text" id="suburb" required class="col-8" />
+            </div>
+                  
+            <div class="col-12 input-group">
+              <label for="postcode" class="col-3">Postcode*</label>
+              <input type="text" id="postcode" required class="col-8" />
+            </div>
+      
+            <div class="col-12 input-group">
+              <label for="state" class="col-3">State*</label>
+              <select name="" id="state">
+                <option value="act">ACT</option>
+                <option value="nsw">NSW</option>
+                <option value="nt">NT</option>
+                <option value="qld">QLD</option>                
+                <option value="tas">TAS</option>                
+                <option value="sa">SA</option> 
+                <option value="vic">VIC</option>                
+                <option value="va">VA</option>
+              </select>
+            </div>
+                          
+            <div class="col-12 input-group">
+              <label for="phonenumber" class="col-3">Phonenumber*</label>
+              <input type="text" id="phonenumber" required class="col-8" />
+            </div>
+            <div class="formButton">
+              <button>Clear</button>
+              <button>Register</button>
+            </div>
+
+          </form>
+        </main>
+        <aside class="col-3 sidebar">
+            <h2>Purchases</h2>
+            <table class="asideTable">
+              <tr>
+                <th>Item</th>
+                <th>Price(AUD)</th>
+              </tr>
+              <tr>
+                <td>Test Item1</td>
+                <td>1000$</td>
+              </tr>
+              <tr>
+                <td>Test Item2</td>
+                <td>500$</td>
+              </tr>
+              <tr>
+                <th>Total</th>
+                <th>1500$</th>
+              </tr>
+            </table>
+            <button>Go to Checkout</button>
+        </aside>
+      </div>
+      <footer><p><a href="privacypolicy.html">Privacy Policy</a><p>&copy; Sumitra Jumrern 2023</p></footer>
+    </div>
+    
+  </body>
+</html>

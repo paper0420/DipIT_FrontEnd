@@ -1,5 +1,5 @@
 aside {
-  position: fixed;
+  position: relative;
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.5s ease-out;
@@ -31,6 +31,7 @@ aside {
 
 .bagButton:checked ~ .bag {
   color: brown;
+  transform: rotate(15deg);
 }
 
 @media (min-width: 600px) {

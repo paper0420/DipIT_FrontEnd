@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  background-color: lightgrey;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+main > h1 {
+  padding: 10px;
+  text-align: center;
+}
+
+header {
+  background-color: lightgray;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  z-index: 5;
+  padding: 10px 10px;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+
+aside {
+  background-color: lightgray;
+  border: 5px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+menu {
+  background-color: lightgray;
+}
+
+.listmenu {
+  list-style: none;
+  background-color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  margin-top: 10px;
+}
+
+.searchForm {
+  margin-top: 10px;
+}
+
+.searchForm > button {
+  padding: 3px;
+}
+
+.listmenu > li > a:hover {
+  background-color: #111;
+  border-radius: 5px;
+}
+
+.productContainer {
+  margin: 10px 10px;
+}
+
+.productCard {
+  padding: 10px 10px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+footer {
+  padding: 5px;
+  background-color: lightgray;
+  text-align: center;
+  height: 10%;
+}
+aside > h2 {
+  padding: 20px 10px;
+}
+
+aside > button {
+  margin: 20px 20px;
+  padding: 10px;
+}
+
+.asideTable {
+  width: 100%;
+}
+
+td,
+th {
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.goallist > li {
+  display: list-item;
+  list-style: circle;
+  margin-left: 1em;
+}
+
+.goallist > li > ul > li {
+  margin-left: 2em;
+}
+
+@media screen and (min-width: 600px) {
+  * {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  .top {
+    border: 1px solid green;
+    height: 20%;
+  }
+
+  .mainContainer {
+    display: flex;
+    background-color: lightgray;
+  }
+
+  footer {
+    padding: 5px;
+    background-color: lightgray;
+    text-align: center;
+    height: 10%;
+  }
+
+  main {
+    overflow-x: hidden;
+  }
+
+  menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+  }
+
+  .listmenu {
+    list-style: none;
+    background-color: lightgray;
+  }
+
+  .listmenu > li {
+    float: left;
+  }
+
+  .listmenu > li > a {
+    display: block;
+    color: black;
+    text-decoration: none;
+  }
+
+  .listmenu > li > a:hover {
+    background-color: gray;
+  }
+
+  .productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sidebar {
+    align-self: flex-start;
+    position: sticky;
+    top: 70px;
+    height: 100%;
+  }
+
+  li {
+    margin: 5px 10px 0px 0px;
+  }
+
+  .searchForm {
+    margin: 5px 5px 0px 0px;
+  }
+} /* media quarie end */

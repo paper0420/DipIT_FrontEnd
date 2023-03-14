@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="template.css" />
+    <link rel="stylesheet" href="hamburgerMenu.css" />
+    <link rel="stylesheet" href="bagButton.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <input class="side-menu" type="checkbox" id="side-menu"  />
+        <label class="hamb" for="side-menu">
+          <span class="hamb-line"></span>
+        </label>
+        <h1> <a href="index.html">ComputerForce</a></h1>
+        <menu class="col-12">
+          <ul class="listmenu">
+            <li><a href="products.html">Products</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+          <form class="searchForm">
+            <label for="search" class="visuallyhidden" hidden>Search</label>
+            <input type="text" name="search" id="search">
+            <button type="submit">Search</button>
+          </form>
+        </menu>
+      </header>
+      <div class="mainContainer col-12">
+        <input class="bagButton" type="checkbox" id="bagButton" />
+        <label class="bag" for="bagButton">
+            &#9751
+        </label>
+        <main class="col-9">
+          <h1>Welcome to Computer Force</h1>
+          <p>Computer Force is your online expert in all things computing</p>
+          <div class="productContainer">
+            <div class="productCard">
+              <a href="products.html">
+                <h2>Computers</h2>
+                <img
+                  src="images/computer.jpg"
+                  alt="Computers photo"
+                  width="200px"
+                  height="200px"
+                />
+              </a>
+            </div>
+            <div class="productCard">
+              <a href="products.html">
+                <h2>Laptops</h2>
+                <img
+                  src="images/laptop.jpg"
+                  alt="labtop photo"
+                  width="200px"
+                  height="200px"
+                />
+              </a>
+            </div>
+            <div class="productCard">
+              <a href="products.html">
+                <h2>Monitors</h2>
+              <img
+                src="images/monitor.jpg"
+                alt="Monitor photo"
+                width="200px"
+                height="200px"
+              />
+              </a>
+            </div>
+            <div class="productCard">
+              <a href="products.html">
+                <h2>Printing & Scanning</h2>
+                <img
+                  src="images/printing.jpg"
+                  alt="Printing & Scanning photo"
+                  width="200px"
+                  height="200px"
+                />
+              </a>
+            </div>
+            <div class="productCard">
+              <a href="products.html">
+                <h2>Software</h2>
+              <img
+                src="images/software.jpg"
+                alt="Software photo"
+                width="200px"
+                height="200px"
+              />
+              </a>
+            </div>
+            <div class="productCard">
+              <a href="products.html">
+                <h2>Tablets</h2>
+                <img
+                  src="images/tablet.jpg"
+                  alt="Tablets photo"
+                  width="200px"
+                  height="200px"
+                />
+              </a>
+            </div>
+          </div>
+        </main>
+        <aside class="col-3 sidebar">
+            <h2>Purchases</h2>
+            <table class="asideTable">
+              <tr>
+                <th>Item</th>
+                <th>Price(AUD)</th>
+              </tr>
+              <tr>
+                <td>Test Item1</td>
+                <td>1000$</td>
+              </tr>
+              <tr>
+                <td>Test Item2</td>
+                <td>500$</td>
+              </tr>
+              <tr>
+                <th>Total</th>
+                <th>1500$</th>
+              </tr>
+            </table>
+            <button>Go to Checkout</button>
+        </aside>
+      </div>
+      <footer><p><a href="privacypolicy.html">Privacy Policy</a></p>
+        <p>&copy; Sumitra Jumrern 2023</p>  </footer>
+    </div>
+  </body>
+</html>

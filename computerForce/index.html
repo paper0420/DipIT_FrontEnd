@@ -12,7 +12,7 @@
   <body>
     <div class="container">
       <header>
-        <input class="side-menu" type="checkbox" id="side-menu" />
+        <input class="side-menu" type="checkbox" id="side-menu"  />
         <label class="hamb" for="side-menu">
           <span class="hamb-line"></span>
         </label>
@@ -24,8 +24,9 @@
             <li><a href="about.html">About</a></li>
           </ul>
           <form class="searchForm">
-            <input type="text" />
-            <button>Search</button>
+            <label for="search" class="visuallyhidden" hidden>Search</label>
+            <input type="text" name="search" id="search">
+            <button type="submit">Search</button>
           </form>
         </menu>
       </header>

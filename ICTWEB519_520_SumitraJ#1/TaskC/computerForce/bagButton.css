@@ -1,0 +1,53 @@
+aside {
+  position: relative;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+}
+
+.bag {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  float: right;
+  font-size: 30px;
+  padding: 12px 15px 0px 0px;
+  z-index: 10;
+} /* Style label tag */
+
+.bagButton {
+  display: none;
+} /* Hide checkbox */
+
+/* Toggle menu icon */
+.bagButton:checked ~ main {
+  display: none;
+}
+.bagButton:checked ~ aside {
+  max-height: none;
+  height: 100%;
+}
+
+.bagButton:checked ~ .bag {
+  color: brown;
+  transform: rotate(15deg);
+}
+
+@media (min-width: 600px) {
+  aside {
+    max-height: none;
+    top: 0;
+    position: relative;
+    /* float: right;
+      width: fit-content; */
+  }
+
+  main {
+    display: block;
+  }
+
+  .bag {
+    display: none;
+  }
+}
