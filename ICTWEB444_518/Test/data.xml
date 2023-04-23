@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+  <person>
+    <name>John Doe</name>
+    <age>35</age>
+    <address>123 Main St</address>
+  </person>
+  <person>
+    <name>Jane Doe</name>
+    <age>30</age>
+    <address>456 Oak St</address>
+  </person>
+  <person>
+    <name>Bob Smith</name>
+    <age>40</age>
+    <address>789 Maple St</address>
+  </person>
+</people>

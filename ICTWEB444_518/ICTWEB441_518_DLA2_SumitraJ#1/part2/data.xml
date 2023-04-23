@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu[
+<!ELEMENT menu (menuItem+)>
+<!ELEMENT menuItem (name, url)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+]>
+
+<menu>
+  <menuItem>
+    <name>Home</name>
+    <url>index.html</url>
+  </menuItem>
+  <menuItem>
+    <name>Products</name>
+    <url>products.html</url>
+  </menuItem>
+  <menuItem>
+    <name>About</name>
+    <url>about.html</url>
+  </menuItem>
+    <menuItem>
+    <name>Contact</name>
+    <url>contact.html</url>
+  </menuItem>
+      <menuItem>
+    <name>Log in</name>
+    <url>login.html</url>
+  </menuItem>
+
+</menu>
